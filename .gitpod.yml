@@ -4,7 +4,7 @@ image:
 tasks:
   - name: Terminal 1
     before: echo 'try airflow install'
-    init: pip "install apache-airflow[celery]==2.3.2"  \
+    init: pip install "apache-airflow[celery]==2.3.2"  \
     --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.3.2/constraints-3.8.txt"
 
 
