@@ -1,2 +1,5 @@
-image: apache/airflow:2.3.3rc3
+image:
+  file: .gitpod.Dockerfile
+tasks:
+  - before: pip install -r requirements.txt
 
