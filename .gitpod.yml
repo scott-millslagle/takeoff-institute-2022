@@ -2,17 +2,7 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - before: |
-      eval $(command gp env -e)
-      echo "~/airflow ${AIRFLOW_HOME}"
-      eval $(command gp env -e)
-      echo "2.3.3 ${AIRFLOW_VERSION}"
-      eval $(command gp env -e)
-      echo "2.3.3 ${PYTHON_VERSION}"
-      eval $(command gp env -e)
-      echo "$(python --version | cut -d " " -f 2 | cut -d "." -f 1-2) ${PYTHON_VERSION}"
-      eval $(command gp env -e)
-      echo "https://raw.githubusercontent.com/apache/airflow/constraints-${AIRFLOW_VERSION}/constraints-${PYTHON_VERSION}.txt ${CONSTRAINT_URL}"
+  - before: export AIRFLOW_HOME=~/airflow
   - command:
       airflow db init
 
