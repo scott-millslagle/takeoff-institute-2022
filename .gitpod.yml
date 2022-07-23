@@ -15,3 +15,9 @@ tasks:
       airflow webserver --port 8080
 
       airflow scheduler
+
+ports:
+  - name: Airflow UI
+    description: The Airflow UI
+    port: 8080
+    onOpen: open-browser
