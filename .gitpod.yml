@@ -8,9 +8,11 @@ tasks:
 
       airflow users create \
       --username admin \
-      --firstname airflow \
-      --lastname airflow \
+      --firstname takeoff \
+      --lastname institute \
       --role Admin \
+      --password PASSWORD \
+      --email smillslagle@gmail.com
 
       airflow webserver --port 8080
 
