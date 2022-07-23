@@ -1,2 +1,7 @@
 image:
   file: .gitpod.Dockerfile
+ports:
+  - name: Airflow UI
+    description: The Airflow UI used to run dags
+    port: 8080
+    onOpen: open-browser
