@@ -2,7 +2,7 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - before: export AIRFLOW_HOME=~/airflow
+  - before: export AIRFLOW_HOME=/workspace/takeoff-institute-2022/airflow
   - command:
       airflow db init
 
