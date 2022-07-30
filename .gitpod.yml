@@ -5,7 +5,7 @@ tasks:
   - before: export AIRFLOW_HOME=/workspace/takeoff-institute-2022/airflow
   - command:
       airflow db init
-
+  - init:
       airflow users create \
       --username admin \
       --firstname takeoff \
@@ -13,9 +13,9 @@ tasks:
       --role Admin \
       --password PASSWORD \
       --email smillslagle@gmail.com
-
+  - init:
       airflow webserver --port 8080
-
+  - init:
       airflow scheduler
 
 ports:
