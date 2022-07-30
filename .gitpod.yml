@@ -3,7 +3,8 @@ image:
 
 tasks: 
     - command:
-      psql -h localhost -d postgres;
+      psql 
+#       -h localhost -d postgres;
 #       echo "CREATE DATABASE airflow_db;"
 #       echo "CREATE USER airflow_user WITH PASSWORD 'airflow_pass';"
 #       echo "GRANT ALL PRIVILEGES ON DATABASE airflow_db TO airflow_user;"
