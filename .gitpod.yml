@@ -2,8 +2,7 @@ image:
   file: .gitpod.Dockerfile
 
 tasks: 
-    - command:
-      airflow db init 
+    - command: airflow db init 
       
 #       airflow users create \
 #       --username admin \
