@@ -2,6 +2,7 @@ image:
   file: .gitpod.Dockerfile
 
 tasks: 
+    - command: echo "psql"
     - command: airflow db init \
         airflow webserver --port 8080
       
