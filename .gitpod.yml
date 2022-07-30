@@ -4,7 +4,8 @@ image:
 tasks:
   - before: export AIRFLOW_HOME=/workspace/takeoff-institute-2022/airflow  
   - command:
-      airflow db init \
+      airflow db init 
+      
       airflow users create \
       --username admin \
       --firstname takeoff \
