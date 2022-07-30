@@ -5,17 +5,17 @@ tasks:
     - command:
       airflow db init 
       
-      airflow users create \
-      --username admin \
-      --firstname takeoff \
-      --lastname institute \
-      --role Admin \
-      --password PASSWORD \
-      --email smillslagle@gmail.com
+#       airflow users create \
+#       --username admin \
+#       --firstname takeoff \
+#       --lastname institute \
+#       --role Admin \
+#       --password PASSWORD \
+#       --email smillslagle@gmail.com
 
       airflow webserver --port 8080
 
-      airflow scheduler
+#       airflow scheduler
 
 ports:
   - name: Airflow UI
