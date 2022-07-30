@@ -2,10 +2,7 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - before: export AIRFLOW_HOME=/workspace/takeoff-institute-2022/airflow
-  - init:
-      pg start
-      
+  - before: export AIRFLOW_HOME=/workspace/takeoff-institute-2022/airflow  
   - command:
       airflow db init \
       airflow users create \
@@ -19,7 +16,8 @@ tasks:
       airflow webserver --port 8080
 
       airflow scheduler
-
+  - init:
+      pg start
 ports:
   - name: Airflow UI
     description: The Airflow UI
